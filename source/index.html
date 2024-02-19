@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta charset="utf-8" />
+    <link name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
+    <title>Главная страница</title>
   </head>
   <body>
+    <header class="main-header">
+      <a
+        class="main-header__link"
+        href="index.html"
+        aria-label="Перейти на главную страницу"
+      ></a>
+      <nav class="main-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <main class="main-container">
+      <h1 class="main-container__title">Мишка - игрушки ручной работы</h1>
+      <section class="cute-things">
+        <h2 class="cute-things__title">Милые штуки ручной работы для дома</h2>
+        <div class="cute-things__links">
+          <a class="cute-things__link" href="#">Предметы интерьера</a
+          ><a class="cute-things__link" href="#">Детские игрушки</a>
+        </div>
+      </section>
+      <section class="crocheted-baskets">
+        <h2 class="crocheted-baskets__title">Вязаные корзинки</h2>
+        <h3 class="crocheted-basket__subtitle">Товар недели</h3>
+        <p class="crocheted-basket__text">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках
+          и трёх размерах.
+        </p>
+        <dl class="crocheted-basket__type-list">
+          <div class="crocheted-basket__type-item">
+            <dt class="crocheted-basket__type-unit">Цвет:</dt>
+            <dd class="crocheted-basket__type-unit">Тиффани/серый</dd>
+          </div>
+          <div class="crocheted-basket__type-item">
+            <dt class="crocheted-basket__type-unit">Диаметр:</dt>
+            <dd class="crocheted-basket__type-unit">25 см</dd>
+          </div>
+          <div class="crocheted-basket__type-item">
+            <dt class="crocheted-basket__type-unit">Высотка:</dt>
+            <dd class="crocheted-basket__type-unit">15 см</dd>
+          </div>
+        </dl>
+        <img
+          class="crocheted-basket__image"
+          src="#"
+          alt="экологически чистая пряжа"
+        />
+        <b class="crocheted-basket__price">Цена: 990 руб.</b>
+        <a class="crocheted-basket__order" href="#">Заказать</a>
+      </section>
 
+      <section class="about-us">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материаты</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайкина фотографиях</li>
+          <li class="about-us__item">Связано вручную
+            с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного производителя</li>
+          <li class="about-us__item">Поставляется
+            в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы:</h2>
+        <p class="reviews__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+у популярных инстамамочек.
+В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <div class="reviews__container-email">
+          <h3 class="reviews__person-title">Анастасия Красильникова</h3>
+          <p class="reviews__person-email">@misssssiskras</p>
+        </div>
+        <div class="reviews__toggles">
+          <button class="reviews__toggle reviews__toggle-left" type="button">
+            <span class="visually-hidden">предыдущий отзыв</span>
+          </button>
+          <button class="reviews__toggle reviews__toggle-right" type="button">
+            <span class="visually-hidden">следующий отзыв</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <address class="contacts__address">
+          <dl class="contacts__address-list">
+            <div class="contacts__address-item">
+              <dt class="contacts__address-type">e-mail:
+              </dt>
+              <dd class="contacts__address-description">info@mimimishkashop.ru</dd>
+            </div>
+            <div class="contacts__address-item">
+              <dt class="contacts__address-type">адрес:
+              </dt>
+              <dd class="contacts__address-description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+            </div>
+          </dl>
+        </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.0641805466566!2d30.31195218809165!3d59.96390137292745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1708328756300!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="contacts__link" href="#">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <a class="main-footer__logo" href="#">
+        <span class="visually-hidden">Перейти на главную страницу</span>
+      </a>
+      <ul class="main-footer__social">
+        <li class="social__item"><a class="social__link" href="#">
+          <span class="visually-hidden">вконтакте</span>
+        </a></li>
+        <li class="social__item"><a class="social__link" href="#">
+          <span class="visually-hidden">ютуб</span>
+        </a></li>
+        <li class="social__item"><a class="social__link" href="#">
+          <span class="visually-hidden">телеграм</span>
+        </a></li>
+      </ul>
+      <a class="main-footer__html-academy-link" href="#">Разработано</a>
+    </footer>
   </body>
 </html>
